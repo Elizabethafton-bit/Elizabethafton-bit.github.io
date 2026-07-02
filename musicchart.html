@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music chart</title>
+        <style>
+      body{
+        background-color:#8611cf;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My favourite MCR songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UCCyoocDxBA?si=4rdluDVxKk-8H3rz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uCUpvTMis-Y?si=q17KFSQgl3b6aGiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dhZTNgAs4Fc?si=OWi3LjuCOz50nueF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    <p><a href="index.html">Return to the homepage</a></p>
+    <hr>
+    <p> &copy; STEM prep 2026</p>
+    </center>
+    <script>
+      var songs=["Helena", "I'm not okay ( I promise)", "The ghost of you"];
+      var views=[277173974, 146252350, 150267765 ];
+      var trace={
+        x: songs, 
+        y: views,
+        type: "bar"
+      };
+      var data=[trace];
+      var layout={title: "My favourite MCR songs"};
+      Plotly.newPlot("plot",data,layout);
+    </script>
+  </body>
+</html>
