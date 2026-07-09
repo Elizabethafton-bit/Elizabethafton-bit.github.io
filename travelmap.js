@@ -9,4 +9,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Kyoto City!</p>").addTo(map);
-var marker1 = L.cricle(place1, {color: "black", fillColor: "#a37936",radious: 80}).addTo(map);
+var marker1 = L.cricle(place1, {color: "black", fillColor: "#a37936",radius: 100}).addTo(map);
