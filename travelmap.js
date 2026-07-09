@@ -9,4 +9,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Kyoto City!</p>").addTo(map);
-var marker1 = L.cricle(place1, {color: "black", fillColor: "#a37936",radius: 100}).addTo(map);
+var marker1 = L.circle(place1, {color: "black", fillColor: "#a37936",radius: 100}).bindPopup("<p>Hello, from Nara city!</p>").addTo(map);
+var marker2 = L.circle(place2, {color: "black", fillColor: "#33419A",radius: 100}).bindPopup("<p>Hello, from Osaka city!</p>").addTo(map);
+var marker3 = L.circle(place3, {color: "black", fillColor: "#50C878",radius: 100}).bindPopup("<p>Hello, from Uji city!</p>").addTo(map);
