@@ -8,7 +8,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-var kyotomarker = L.marker(coordinates, {title: "Kyoto, Japan"}).bindPopup("<h4>Kyoto, Japan</h4><br><a href='travel.html'>Learn more here</a><br><iframe src='travel.html'></iframe>").addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Kyoto City!</p>").addTo(map);
 var marker1 = L.circleMarker(place1, {color: "black", fillColor: "#a37936",radius: 80}).bindPopup("<p>Hello, from Nara city!</p>").addTo(map);
 var marker2 = L.circleMarker(place2, {color: "black", fillColor: "#33419A",radius: 80}).bindPopup("<p>Hello, from Osaka city!</p>").addTo(map);
