@@ -3,12 +3,12 @@ var coordinates = [35.0116, 135.7681];
 var place1= [34.68444, 135.80500];
 var place2= [34.69374, 135.50218];
 var place3= [34.88444, 135.79972];
-var map = L.map('map').setView(coordinates, 13);
+var map = L.map('map').setView(coordinates, 10);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Kyoto City!</p>").addTo(map);
-var marker1 = L.circle(place1, {color: "black", fillColor: "#a37936",radius: 100}).bindPopup("<p>Hello, from Nara city!</p>").addTo(map);
-var marker2 = L.circle(place2, {color: "black", fillColor: "#33419A",radius: 100}).bindPopup("<p>Hello, from Osaka city!</p>").addTo(map);
-var marker3 = L.circle(place3, {color: "black", fillColor: "#50C878",radius: 100}).bindPopup("<p>Hello, from Uji city!</p>").addTo(map);
+var marker1 = L.circleMarker(place1, {color: "black", fillColor: "#a37936",radius: 5000}).bindPopup("<p>Hello, from Nara city!</p>").addTo(map);
+var marker2 = L.circleMarker(place2, {color: "black", fillColor: "#33419A",radius: 5000}).bindPopup("<p>Hello, from Osaka city!</p>").addTo(map);
+var marker3 = L.circleMarker(place3, {color: "black", fillColor: "#50C878",radius: 5000}).bindPopup("<p>Hello, from Uji city!</p>").addTo(map);
