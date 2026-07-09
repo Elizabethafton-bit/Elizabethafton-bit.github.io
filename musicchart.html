@@ -8,6 +8,19 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
       }
+           h1 {
+        background: linear-gradient(45deg, #000000, #ff0000, #ffffff); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block; 
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #000000, #ff0000, #ffffff); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        font-weight: bold;
+      }
     </style>
     <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
   </head>
@@ -20,7 +33,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/dhZTNgAs4Fc?si=OWi3LjuCOz50nueF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
     <p><a href="index.html">Return to the homepage</a></p>
     <hr>
-    <p> &copy; STEM prep 2026</p>
+    <p class="gradient-text"> &copy; STEM prep 2026</p>
     </center>
     <script>
       var songs=["Helena", "I'm not okay ( I promise)", "The ghost of you"];
